@@ -7,32 +7,62 @@ import { SearchModal } from "../search/SearchModal"
 import { useThemeOptions } from "@gatsbywpthemes/gatsby-theme-blog-data/src/hooks"
 import Headroom from "react-headroom"
 import clsx from "clsx"
+import { window } from "browser-monads"
+import { HeroGradient, Wave } from "../SVG"
+import bgGradient from "../../images/hero-gradient.svg"
+import { HomeHero } from "./HomeHero"
+
+const HeaderContent = (props) => {
+  return (
+    <div className={"flex justify-between center-container"} {...props}>
+      <div className="flex space-x-3">
+        <Branding title="Gatsby WP Themes" />
+        {/* {search && <SearchModal />} */}
+      </div>
+      <div className="flex items-center space-x-5">
+        <MainMenu orientation="H" className="hidden md:flex" />
+        <Slidemenu className="md:hidden" />
+        {/* {addColorModes && <ColorSwitch />} */}
+      </div>
+    </div>
+  )
+}
 
 export const Header = ({ ...props }) => {
   const { addWordPressSearch: search, addColorModes } = useThemeOptions()
-
+  const path = window.location.pathname
+  const isHome = path === "/"
   return (
-    <Headroom className="z-10">
-      <header
-        className={clsx(
-          "py-5 shadow-md relative",
-          "bg-headerBg dark:bg-dark-headerBg",
-          "text-headerColor dark:text-dark-headerColor"
-        )}
-        {...props}
-      >
-        <div className={"flex justify-between center-container"}>
-          <div className="flex space-x-3">
-            <Branding title="Starter Light" />
-            {/* {search && <SearchModal />} */}
+    <>
+      {isHome ? (
+        <header
+          className="relative h-[800px] bg-left-top object-cover bg-no-repeat text-light"
+          css={{ backgroundImage: `url(${bgGradient})` }}
+        >
+          <Wave
+            width="100%"
+            height={230}
+            className="absolute bottom-0 left-0"
+          />
+          <div className="py-6">
+            <HeaderContent />
+            <HomeHero />
           </div>
-          <div className="flex items-center space-x-5">
-            <MainMenu orientation="H" className="hidden md:flex" />
-            <Slidemenu className="md:hidden" />
-            {addColorModes && <ColorSwitch />}
-          </div>
-        </div>
-      </header>
-    </Headroom>
+        </header>
+      ) : (
+        <Headroom className="z-10">
+          <header
+            className={clsx(
+              "py-5 shadow-md relative",
+              "bg-headerBg dark:bg-dark-headerBg",
+              "text-headerColor dark:text-dark-headerColor"
+            )}
+            {...props}
+          >
+            <HeaderContent />
+          </header>
+        </Headroom>
+      )}
+    </>
   )
 }

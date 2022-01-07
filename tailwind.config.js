@@ -13,7 +13,8 @@ const light = "#FFF4E6",
   secondary = "#4C959B",
   yellow = "#FF9E2A",
   accent = "#43D6E8",
-  purple = "#c725A3"
+  purple = "#c725A3",
+  pink = "#f05c7f"
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -37,6 +38,7 @@ module.exports = {
         md: rem(768),
         sm: rem(640),
         xl: rem(1280),
+        big: rem(1200),
       },
       fontWeight: {
         body: 500,
@@ -66,6 +68,7 @@ module.exports = {
         highlight: purple,
         yellow,
         purple,
+        pink,
         bg: light,
         text: colors.stone[800],
         accentColor: primary,

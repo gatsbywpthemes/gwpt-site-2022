@@ -10,12 +10,8 @@ export const Branding = ({ title, ...props }) => {
       {logo ? (
         <Logo />
       ) : (
-        <h1 className="mb-0 text-2xl tracking-wider uppercase" {...props}>
-          <Link
-            className="hover:text-accentColor hover:no-underline"
-            to="/"
-            rel="home"
-          >
+        <h1 className="mb-0 text-4xl" {...props}>
+          <Link className="text-bg hover:no-underline" to="/" rel="home">
             {title}
           </Link>
         </h1>

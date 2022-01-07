@@ -4323,6 +4323,13 @@ brcast@^2.0.2:
   resolved "https://registry.yarnpkg.com/brcast/-/brcast-2.0.2.tgz#2db16de44140e418dc37fab10beec0369e78dcef"
   integrity sha512-Tfn5JSE7hrUlFcOoaLzVvkbgIemIorMIyoMr3TgvszWW7jFt2C9PdeMLtysYD9RU0MmU17b69+XJG1eRY2OBRg==
 
+browser-monads@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/browser-monads/-/browser-monads-1.0.0.tgz#c9a210ef3793cae7016440d9a9adfedd9a5ad7bd"
+  integrity sha1-yaIQ7zeTyucBZEDZqa3+3Zpa170=
+  dependencies:
+    nothing-mock "^1.0.0"
+
 browserslist@4.14.2:
   version "4.14.2"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.14.2.tgz#1b3cec458a1ba87588cc5e9be62f19b6d48813ce"
@@ -9877,6 +9884,11 @@ normalize.css@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
   integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
+
+nothing-mock@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/nothing-mock/-/nothing-mock-1.0.4.tgz#470b6bd7f7e0dd900b101ed77178683db5141298"
+  integrity sha512-wl5hpQruSQHt5M15oY/akWd7hFPyec0uTCUHYQa3WhBeTxonsFnMKmixaCDvb4U7MN9UjS2UvXw3s4KxjrNjKg==
 
 npm-run-path@^2.0.0:
   version "2.0.2"

@@ -10,7 +10,7 @@ const config = {
       google: [{ family: "Inter" }, { family: "Inter" }],
     },
   },
-  addColorMode: false,
+  addColorModes: false,
 }
 
 module.exports = config
