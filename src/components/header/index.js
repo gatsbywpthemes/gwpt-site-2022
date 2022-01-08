@@ -36,7 +36,7 @@ export const Header = ({ ...props }) => {
     <>
       {isHome ? (
         <header
-          className="relative h-[800px] bg-left-top object-cover bg-no-repeat text-light"
+          className="relative h-[830px] bg-left-top object-cover bg-no-repeat text-light"
           css={{ backgroundImage: `url(${bgGradient})` }}
         >
           <Wave

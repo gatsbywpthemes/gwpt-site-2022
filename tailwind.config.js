@@ -4,11 +4,11 @@ const { darken, lighten } = require("polished")
 
 //palette
 const light = "#FFF4E6",
-  ultraLight = lighten(0.04, "#FBEED9"),
-  dark = "#082737",
-  dark0 = lighten(0.08, "#082737"),
-  dark2 = darken(0.04, "#082737"),
-  ultraDark = darken(0.1, "#082737"),
+  ultraLight = lighten(0.04, "#FFF4E6"),
+  dark = "#212338",
+  dark0 = lighten(0.08, "#212338"),
+  dark2 = darken(0.04, "#212338"),
+  ultraDark = darken(0.1, "#212338"),
   primary = "#A855F7",
   secondary = "#4C959B",
   yellow = "#FF9E2A",
