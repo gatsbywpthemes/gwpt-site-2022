@@ -7,7 +7,7 @@ const config = {
   },
   webfontsOptions: {
     fonts: {
-      google: [{ family: "Inter" }, { family: "Inter" }],
+      google: [{ family: "Inter", variants: ["400", "500", "600", "700"] }],
     },
   },
   addColorModes: false,
