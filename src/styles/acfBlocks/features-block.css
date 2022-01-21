@@ -1,0 +1,7 @@
+.features-block {
+  .feature {
+    .intro {
+      @apply font-normal;
+    }
+  }
+}

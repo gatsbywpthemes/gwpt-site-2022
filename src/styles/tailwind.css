@@ -8,6 +8,7 @@
 @import "acfBlocks/sections-block.css";
 @import "acfBlocks/accordion-block.css";
 @import "acfBlocks/testimonials-block.css";
+@import "acfBlocks/features-block.css";
 
 @layer base {
   /* Menu */
@@ -91,5 +92,19 @@
   .dark input[type="search"]:-webkit-autofill {
     box-shadow: theme("colors.dark.searchBg") 0px 0px 0px 1000px inset;
     -webkit-text-fill-color: theme("colors.dark.text");
+  }
+}
+
+.intro {
+  @apply text-lg text-center;
+  @apply max-w-md mx-auto space-y-6;
+  .headline {
+    @apply mb-6 text-sm uppercase text-primary;
+  }
+  .content-text {
+    @apply text-xl font-semibold;
+    h2 {
+      @apply pb-6 text-5xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
+    }
   }
 }
