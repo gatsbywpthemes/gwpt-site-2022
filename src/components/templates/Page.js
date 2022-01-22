@@ -5,7 +5,6 @@ import { ParsedContent, ActivatePageScripts } from "../../utils"
 import { Seo } from "@gatsbywpthemes/gatsby-plugin-wp-seo"
 import { useThemeOptions } from "@gatsbywpthemes/gatsby-theme-blog-data/src/hooks"
 import clsx from "clsx"
-import loadable from "@loadable/component"
 
 const ContentBlock = lazy(() =>
   import("@gatsbywpthemes/gatsby-theme-acf-builder/src/ContentBlock")

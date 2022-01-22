@@ -28,11 +28,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-use-dark-mode`,
     `@gatsbywpthemes/gatsby-theme-wp-comments`,
     `@gatsbywpthemes/gatsby-theme-wp-search`,
     `@gatsbywpthemes/gatsby-plugin-gwpt-tailwind`,
-    // `@gatsbywpthemes/gatsby-theme-acf-builder`,
+    `@gatsbywpthemes/gatsby-theme-acf-builder`,
     {
       resolve: `@gatsbywpthemes/gatsby-plugin-gwpt-packages`,
       options: {
