@@ -1,7 +1,6 @@
 .features-block {
-  .feature {
-    .intro {
-      @apply font-normal;
-    }
+  .features-container {
+    @apply container mx-auto mt-16 max-w-big;
+    @apply grid-cols-2 gap-14 md:grid;
   }
 }
