@@ -102,9 +102,9 @@ section > .intro {
     @apply mb-6 text-sm uppercase text-primary;
   }
   .content-text {
-    @apply text-xl font-semibold;
+    @apply text-xl font-semibold leading-relaxed;
     h2 {
-      @apply pb-6 text-5xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
+      @apply pb-6 text-6xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
     }
   }
 }

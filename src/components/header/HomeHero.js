@@ -5,12 +5,12 @@ import clsx from "clsx"
 
 export const HomeHero = () => {
   return (
-    <div className="flex items-center justify-between py-10 mx-auto max-w-big">
+    <div className="container items-center justify-between px-4 py-10 mx-auto lg:flex md:px-0">
       <div className="space-y-7 left">
-        <h1 className="text-6xl leading-tight">
+        <h1 className="text-4xl !leading-tight md:text-5xl lg:text-6xl">
           Gatsby themes{" "}
           <span className="text-gradient bg-gradient-to-r from-pink to-yellow">
-            designed to work with{" "}
+            designed to work <br className="hidden lg:block" /> with{" "}
           </span>
           WordPress
         </h1>

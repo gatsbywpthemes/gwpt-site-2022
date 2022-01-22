@@ -41,7 +41,7 @@ module.exports = {
         big: rem(1200),
       },
       fontWeight: {
-        body: 500,
+        body: 400,
         heading: "bold",
         bold: 700,
       },
@@ -70,7 +70,7 @@ module.exports = {
         purple,
         pink,
         bg: light,
-        text: colors.stone[800],
+        text: colors.stone[600],
         accentColor: primary,
         /* header */
         headerBg: dark,

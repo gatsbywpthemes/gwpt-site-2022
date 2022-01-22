@@ -22,7 +22,6 @@ const HeaderContent = (props) => {
       <div className="flex items-center space-x-5">
         <MainMenu orientation="H" className="hidden md:flex" />
         <Slidemenu className="md:hidden" />
-        {/* {addColorModes && <ColorSwitch />} */}
       </div>
     </div>
   )

@@ -1,6 +1,17 @@
 .features-block {
   .features-container {
-    @apply container mx-auto mt-16 max-w-big;
-    @apply grid-cols-2 gap-14 md:grid;
+    @apply container px-4 mx-auto mt-16 md:px-0;
+    @apply grid grid-cols-1 md:grid-cols-2 gap-14;
+  }
+  .feature {
+    img {
+    }
+    .intro {
+      .headline {
+        @apply my-5 text-4xl tracking-wide text-gradient bg-gradient-to-r from-pink to-yellow;
+      }
+      .content {
+      }
+    }
   }
 }
