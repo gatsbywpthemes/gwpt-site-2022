@@ -8,7 +8,7 @@
     }
     .intro {
       .headline {
-        @apply my-5 text-4xl tracking-wide text-gradient bg-gradient-to-r from-pink to-yellow;
+        @apply my-5 text-4xl tracking-wide text-gradient bg-gradient-to-r from-pink to-gold;
       }
       .content {
       }

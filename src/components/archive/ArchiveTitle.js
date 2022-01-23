@@ -7,7 +7,7 @@ export const Archivetitle = ({ name, text, className, ...props }) => {
       className={clsx(
         "inline-block",
         "px-7 py-2 rounded-full shadow-lg",
-        "bg-gradient-to-r from-secondary to-teal-300 dark:from-primary dark:to-purple",
+        "bg-gradient-to-r from-secondary to-teal-300 dark:from-primary dark:to-hotPink",
 
         className
       )}

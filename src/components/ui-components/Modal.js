@@ -19,7 +19,7 @@ export const Modal = ({ isOpen, children, closeModal }) => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-dark opacity-80" />
+            <Dialog.Overlay className="fixed inset-0 bg-gradient-to-tr from-purple-900 via-hotPink to-gold opacity-90" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}

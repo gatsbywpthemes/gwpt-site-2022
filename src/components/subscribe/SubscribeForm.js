@@ -1,7 +1,10 @@
 import React, { useState } from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp"
+import tw from "twin.macro"
+import clsx from "clsx"
+import { GradientBorder } from "../ui-components"
 
-export const SubscribeForm = ({ ...props }) => {
+export const SubscribeForm = ({ modal, ...props }) => {
   const [firstName, setFirstName] = useState("")
   const [email, setEmail] = useState("")
   const [msg, setMsg] = useState()
@@ -17,26 +20,33 @@ export const SubscribeForm = ({ ...props }) => {
   const handleChange = (e) => {
     setEmail(e.target.value)
   }
+  const styledInput = "  border-0 bg-orange-50 shadow-sm rounded-md "
   return (
     <>
       {msg ? (
         msg
       ) : (
         <form onSubmit={handleSubmit} {...props}>
-          <input
-            type="text"
-            placeholder="First Name"
-            value={firstName}
-            required
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-          <input
-            type="email"
-            placeholder="Email address"
-            onChange={handleChange}
-            value={email}
-            required
-          />
+          <GradientBorder className={clsx(` p-[3px] mb-5 rounded-md`)}>
+            <input
+              type="text"
+              placeholder="First Name"
+              value={firstName}
+              required
+              onChange={(e) => setFirstName(e.target.value)}
+              className={styledInput}
+            />
+          </GradientBorder>
+          <GradientBorder className={clsx(` p-[3px] mb-5 rounded-md`)}>
+            <input
+              type="email"
+              placeholder="Email address"
+              onChange={handleChange}
+              value={email}
+              className={styledInput}
+              required
+            />
+          </GradientBorder>
           <button type="submit">Subscribe</button>
         </form>
       )}

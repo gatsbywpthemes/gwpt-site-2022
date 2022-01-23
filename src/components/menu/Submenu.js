@@ -53,7 +53,7 @@ const SubmenuH = ({ menuItem }) => {
             `px-5 py-3 w-56`,
             `z-50`,
 
-            `bg-gradient-to-tr from-secondary to-teal-300 dark:from-primary dark:to-purple`
+            `bg-gradient-to-tr from-secondary to-teal-300 dark:from-primary dark:to-hotPink`
           )}
         >
           <div className="relative">
