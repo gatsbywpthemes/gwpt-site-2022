@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import heroImage from "../../images/hero-image.svg"
 import { StaticImage } from "gatsby-plugin-image"
 import clsx from "clsx"
+import { Modal } from "../ui-components"
 
 export const HomeHero = () => {
+  let [isOpenModal, setIsOpenModal] = useState(false)
   return (
     <div className="container items-center justify-between px-4 py-10 mx-auto lg:flex md:px-0">
       <div className="space-y-7 left">

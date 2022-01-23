@@ -1,5 +1,5 @@
-import { Dialog, Transition } from "@headlessui/react";
-import React, { Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react"
+import React, { Fragment } from "react"
 
 export const Modal = ({ isOpen, children, closeModal }) => {
   return (
@@ -19,7 +19,7 @@ export const Modal = ({ isOpen, children, closeModal }) => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-darkBlue opacity-80" />
+            <Dialog.Overlay className="fixed inset-0 bg-dark opacity-80" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -43,5 +43,5 @@ export const Modal = ({ isOpen, children, closeModal }) => {
         </div>
       </Dialog>
     </Transition>
-  );
-};
+  )
+}
