@@ -1,12 +1,9 @@
-import React, { useState, Fragment } from "react"
+import React, { useState } from "react"
 import heroImage from "../../images/hero-image.svg"
 import { StaticImage } from "gatsby-plugin-image"
-import { Dialog, Transition } from "@headlessui/react"
 
 import clsx from "clsx"
 import { SubscribeModal } from "../subscribe/SubscribeModal"
-import { Modal } from "../ui-components"
-import { SubscribeForm } from "../subscribe/SubscribeForm"
 
 export const HomeHero = () => {
   let [isOpen, setIsOpen] = useState(false)
