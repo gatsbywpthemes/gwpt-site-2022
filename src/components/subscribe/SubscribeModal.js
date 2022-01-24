@@ -17,7 +17,7 @@ export const SubscribeModal = ({ isOpen, setIsOpen }) => {
         />
         <Dialog.Title
           as="h2"
-          className="mb-10 text-4xl text-center text-gradient bg-gradient-to-r from-hotPink to-gold"
+          className="mb-5 text-2xl text-center md:mb-10 md:text-4xl text-gradient bg-gradient-to-r from-hotPink to-gold"
         >
           Subscribe <br />
           and get your free theme!
