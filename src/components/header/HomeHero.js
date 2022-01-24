@@ -47,7 +47,7 @@ export const HomeHero = () => {
           </div>
         </div>
         {/* <StaticImage src={heroImage} alt="" width={600} height={450} /> */}
-        <img src={heroImage} alt="" />
+        <img src={heroImage} alt="" className="hidden lg:block" />
       </div>
 
       <SubscribeModal isOpen={isOpen} setIsOpen={setIsOpen} />
