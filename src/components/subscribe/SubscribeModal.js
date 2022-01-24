@@ -2,6 +2,7 @@ import React from "react"
 import { Modal } from "../ui-components"
 import { Dialog } from "@headlessui/react"
 import { SubscribeForm } from "./SubscribeForm"
+import { HiOutlineX as CloseIcon } from "react-icons/hi"
 
 export const SubscribeModal = ({ isOpen, setIsOpen }) => {
   function closeModal() {
@@ -10,25 +11,19 @@ export const SubscribeModal = ({ isOpen, setIsOpen }) => {
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen} closeModal={closeModal}>
       <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden align-middle transition-all transform shadow-xl bg-light md:px-20 md:py-10 bg rounded-2xl">
+        <CloseIcon
+          className="absolute top-0 m-4 text-3xl cursor-pointer -right-0 text-hotPink"
+          onClick={closeModal}
+        />
         <Dialog.Title
           as="h2"
-          className="mb-5 text-center text-gradient bg-gradient-to-r from-hotPink to-gold"
+          className="mb-10 text-4xl text-center text-gradient bg-gradient-to-r from-hotPink to-gold"
         >
-          Susbscribe <br />
-          and get our free theme!
+          Subscribe <br />
+          and get your free theme!
         </Dialog.Title>
 
         <SubscribeForm className="subscribe-form" />
-
-        <div className="mt-4">
-          <button
-            type="button"
-            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-            onClick={closeModal}
-          >
-            Got it, thanks!
-          </button>
-        </div>
       </div>
     </Modal>
   )

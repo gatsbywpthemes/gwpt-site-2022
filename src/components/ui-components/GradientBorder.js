@@ -1,4 +1,7 @@
 import tw from "twin.macro"
 
-export const GradientBorder = tw.div`
+export const GradientBorderPurple = tw.div`
 bg-gradient-to-r from-hotPink to-gold`
+
+export const GradientBorderViolet = tw.div`
+bg-gradient-to-r from-hotPink to-cyan-500`
