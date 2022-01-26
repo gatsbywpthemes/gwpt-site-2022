@@ -1,7 +1,7 @@
 .features-block {
   &.advantages {
     .features-container {
-      @apply container px-4 mx-auto mt-16 md:px-0;
+      @apply center-container mt-16 mx-auto md:px-0;
       @apply grid grid-cols-1 md:grid-cols-2 gap-14;
     }
     .feature {
@@ -17,5 +17,25 @@
     }
   }
   &.plugins {
+    @apply center-container;
+    .features-container {
+      @apply lg:flex gap-16 mt-10 lg:mt-16;
+      .feature {
+        @apply relative;
+        @apply border-4 border-orange-600;
+        @apply bg-light;
+        @apply rounded-xl shadow-lg px-10 py-16 w-1/3;
+        /* &:after {
+          content: "";
+          @apply absolute -inset-1 bg-gradient-to-tr from-hotPink to-gold;
+          @apply rounded-xl shadow-lg -z-10;
+          width: calc(100%+14px);
+          height: 500px;
+        } */
+        .headline {
+          @apply text-xl text-gradient bg-gradient-to-r from-purple-900 to-cyan-500 my-4;
+        }
+      }
+    }
   }
 }

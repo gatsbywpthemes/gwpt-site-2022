@@ -46,7 +46,7 @@
 
 @layer components {
   .center-container {
-    @apply px-5 mx-auto md:px-6 lg:px-10 w-[100%];
+    @apply px-4 mx-auto container lg:px-0;
   }
   .card {
     @apply rounded-lg shadow-lg bg-cardBg dark:bg-dark-cardBg;

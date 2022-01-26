@@ -15,12 +15,16 @@
     }
   }
   &.features-list {
-    @apply container px-4 mx-auto mt-16 md:px-0;
-    @apply grid grid-cols-1 md:grid-cols-6 gap-20 items-center;
+    @apply container px-4 mx-auto mt-10 lg:mt-16 lg:px-0 max-w-lg;
+    @apply grid grid-cols-1 lg:grid-cols-6 lg:gap-20 items-center;
     .features-text {
-      @apply col-span-2;
+      @apply col-span-2 relative;
       li {
-        @apply mb-3;
+        @apply text-center lg:text-left;
+        @apply mb-4 font-semibold text-xl text-gradient bg-gradient-to-r from-purple-800  to-cyan-500;
+
+        &:before {
+        }
       }
     }
     .features-img {

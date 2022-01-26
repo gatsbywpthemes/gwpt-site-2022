@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense, lazy } from "react"
+import React from "react"
 import { Layout } from "../Layout"
 import { Sidebar } from "../Sidebar"
 import { ParsedContent, ActivatePageScripts } from "../../utils"
@@ -29,6 +29,7 @@ const Page = ({ page, ctx }) => {
   const hasSidebar = pageTemplate.includes("sidebar") && sidebarWidgets
 
   const skipTitle = headlesswp?.skipTitle || false
+
   const postWidth = layoutWidth.post || "xl"
 
   const featuredImage =
