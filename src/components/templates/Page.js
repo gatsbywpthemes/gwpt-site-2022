@@ -5,30 +5,13 @@ import { ParsedContent, ActivatePageScripts } from "../../utils"
 import { Seo } from "@gatsbywpthemes/gatsby-plugin-wp-seo"
 import { useThemeOptions } from "@gatsbywpthemes/gatsby-theme-blog-data/src/hooks"
 import clsx from "clsx"
-
-const ContentBlock = lazy(() =>
-  import("@gatsbywpthemes/gatsby-theme-acf-builder/src/ContentBlock")
-)
-const SectionsBlock = lazy(() =>
-  import("@gatsbywpthemes/gatsby-theme-acf-builder/src/SectionsBlock")
-)
-
-const CoverBlock = lazy(() =>
-  import("@gatsbywpthemes/gatsby-theme-acf-builder/src/CoverBlock")
-)
-
-const FeaturesBlock = lazy(() =>
-  import("@gatsbywpthemes/gatsby-theme-acf-builder/src/FeaturesBlock")
-)
-const AccordionBlock = lazy(() =>
-  import("@gatsbywpthemes/gatsby-theme-acf-builder/src/AccordionBlock")
-)
-const TestimonialsBlock = lazy(() =>
-  import("@gatsbywpthemes/gatsby-theme-acf-builder/src/TestimonialsBlock")
-)
-const PricingBlock = lazy(() =>
-  import("@gatsbywpthemes/gatsby-theme-acf-builder/src/PricingBlock")
-)
+import ContentBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/ContentBlock"
+import SectionsBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/SectionsBlock"
+import CoverBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/CoverBlock"
+import FeaturesBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/FeaturesBlock"
+import AccordionBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/AccordionBlock"
+import TestimonialsBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/TestimonialsBlock"
+import PricingBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/PricingBlock"
 
 const Page = ({ page, ctx }) => {
   const {
@@ -50,11 +33,6 @@ const Page = ({ page, ctx }) => {
 
   const featuredImage =
     page.featuredImage?.node.localFile.childImageSharp?.original
-  const [isMounted, setIsMounted] = useState(false)
-
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
 
   return (
     <Layout page={page} type="page">
@@ -107,39 +85,25 @@ const Page = ({ page, ctx }) => {
             </div>
             {blocks?.length > 0 &&
               blocks.map((block) => {
-                const { __typename } = block
-                if (!isMounted) return null
-                return (
-                  <Suspense fallback={<div>Loading...</div>}>
-                    {__typename ===
-                      "WpPage_Layoutblocks_Blocks_ContentBlock" && (
-                      <ContentBlock {...block} />
-                    )}
-                    {__typename ===
-                      "WpPage_Layoutblocks_Blocks_SectionsBlock" && (
-                      <SectionsBlock {...block} />
-                    )}
-                    {__typename === "WpPage_Layoutblocks_Blocks_CoverBlock" && (
-                      <CoverBlock {...block} />
-                    )}
-                    {__typename ===
-                      "WpPage_Layoutblocks_Blocks_FeaturesBlock" && (
-                      <FeaturesBlock {...block} />
-                    )}
-                    {__typename ===
-                      "WpPage_Layoutblocks_Blocks_AccordionBlock" && (
-                      <AccordionBlock {...block} />
-                    )}
-                    {__typename ===
-                      "WpPage_Layoutblocks_Blocks_TestimonialsBlock" && (
-                      <TestimonialsBlock {...block} />
-                    )}
-                    {__typename ===
-                      "WpPage_Layoutblocks_Blocks_PricingBlock" && (
-                      <PricingBlock {...block} />
-                    )}
-                  </Suspense>
-                )
+                switch (block.__typename) {
+                  case "WpPage_Layoutblocks_Blocks_ContentBlock":
+                    return <ContentBlock {...block} />
+                  case "WpPage_Layoutblocks_Blocks_SectionsBlock":
+                    return <SectionsBlock {...block} />
+                  case "WpPage_Layoutblocks_Blocks_CoverBlock":
+                    return <CoverBlock {...block} />
+                  case "WpPage_Layoutblocks_Blocks_FeaturesBlock":
+                    return <FeaturesBlock {...block} />
+                  case "WpPage_Layoutblocks_Blocks_AccordionBlock":
+                    return <AccordionBlock {...block} />
+                  case "WpPage_Layoutblocks_Blocks_TestimonialsBlock":
+                    return <TestimonialsBlock {...block} />
+                  case "WpPage_Layoutblocks_Blocks_PricingBlock":
+                    return <PricingBlock {...block} />
+
+                  default:
+                    return null
+                }
               })}
           </div>
           {hasSidebar && (
