@@ -56,13 +56,13 @@
   }
   /* Buttons */
   .btn {
-    @apply px-4 py-2 text-xs text-white uppercase transition duration-500 rounded-full shadow-md bg-gradient-to-r hover:-translate-y-1 hover:shadow-xl;
+    @apply px-4 font-semibold tracking-wider py-2 text-xs text-white uppercase transition duration-500 rounded-full shadow-md bg-gradient-to-r hover:-translate-y-1 hover:shadow-xl;
   }
   .btn-primary {
     @apply from-hotPink to-gold;
   }
   .btn-secondary {
-    @apply from-secondary to-teal-300;
+    @apply from-purple-900 to-cyan-500;
   }
   .btn-large {
     @apply px-6 py-3;

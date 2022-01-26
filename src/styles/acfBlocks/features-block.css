@@ -19,12 +19,12 @@
   &.plugins {
     @apply center-container;
     .features-container {
-      @apply lg:flex gap-16 mt-10 lg:mt-16;
+      @apply flex xl:gap-16 gap-10 mt-10 lg:mt-16 flex-wrap lg:flex-nowrap;
       .feature {
         @apply relative;
         @apply border-4 border-orange-600;
         @apply bg-light;
-        @apply rounded-xl shadow-lg px-10 py-16 w-1/3;
+        @apply rounded-xl shadow-lg px-10 py-16 lg:w-1/3;
         /* &:after {
           content: "";
           @apply absolute -inset-1 bg-gradient-to-tr from-hotPink to-gold;
@@ -34,6 +34,15 @@
         } */
         .headline {
           @apply text-xl text-gradient bg-gradient-to-r from-purple-900 to-cyan-500 my-4;
+        }
+        .btn-container {
+          @apply flex justify-start mt-10;
+          .button {
+            @apply relative;
+            @apply text-gradient bg-gradient-to-r from-hotPink to-gold font-bold text-upper-spaced;
+            @apply transition duration-500 ease-in-out;
+            @apply hover:translate-x-2;
+          }
         }
       }
     }
