@@ -10,7 +10,6 @@ export const SubscribeForm = ({ modal, ...props }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     addToMailchimp(email, { FNAME: firstName }).then((data) => {
-      console.log("data", data)
       return data.result === "success"
         ? setMsg(
             "Thank you for subscribing! we have sent you a confirmation email with your free theme."
@@ -21,6 +20,16 @@ export const SubscribeForm = ({ modal, ...props }) => {
   const handleChange = (e) => {
     setEmail(e.target.value)
   }
+
+  const WithGradient = ({ children }) => {
+    return modal ? (
+      <GradientBorderPurple className="p-[3px] mb-5 rounded-md">
+        {children}
+      </GradientBorderPurple>
+    ) : (
+      children
+    )
+  }
   const styledInput =
     " input-focus border-0 bg-orange-50 shadow-sm rounded-md text-text "
   return (
@@ -29,7 +38,7 @@ export const SubscribeForm = ({ modal, ...props }) => {
         <div className="text-lg text-text">{msg}</div>
       ) : (
         <form onSubmit={handleSubmit} {...props}>
-          <GradientBorderPurple className={clsx(` p-[3px] mb-5 rounded-md`)}>
+          <WithGradient>
             <input
               type="text"
               placeholder="First Name"
@@ -38,8 +47,8 @@ export const SubscribeForm = ({ modal, ...props }) => {
               onChange={(e) => setFirstName(e.target.value)}
               className={styledInput}
             />
-          </GradientBorderPurple>
-          <GradientBorderPurple className={clsx(` p-[3px] mb-5 rounded-md`)}>
+          </WithGradient>
+          <WithGradient>
             <input
               type="email"
               placeholder="Email address"
@@ -48,7 +57,7 @@ export const SubscribeForm = ({ modal, ...props }) => {
               className={styledInput}
               required
             />
-          </GradientBorderPurple>
+          </WithGradient>
           <div className="flex justify-end">
             <button className="btn btn-primary btn-large" type="submit">
               Subscribe

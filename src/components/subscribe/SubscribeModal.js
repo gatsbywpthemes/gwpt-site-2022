@@ -23,7 +23,7 @@ export const SubscribeModal = ({ isOpen, setIsOpen }) => {
           and get your free theme!
         </Dialog.Title>
 
-        <SubscribeForm className="subscribe-form" />
+        <SubscribeForm className="subscribe-form" modal />
       </div>
     </Modal>
   )

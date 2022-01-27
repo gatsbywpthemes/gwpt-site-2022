@@ -24,7 +24,7 @@
         @apply relative;
         @apply border-4 border-orange-600;
         @apply bg-light;
-        @apply rounded-xl shadow-lg px-10 py-16 lg:w-1/3;
+        @apply rounded-xl shadow-lg xl:px-10 px-8 py-12 lg:w-1/3;
         /* &:after {
           content: "";
           @apply absolute -inset-1 bg-gradient-to-tr from-hotPink to-gold;

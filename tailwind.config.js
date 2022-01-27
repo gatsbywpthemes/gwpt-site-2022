@@ -5,7 +5,7 @@ const { darken, lighten } = require("polished")
 //palette
 const light = "#FFF4E6",
   ultraLight = lighten(0.04, "#FFF4E6"),
-  dark = "#212338",
+  dark = "#321d50",
   dark0 = lighten(0.08, "#212338"),
   dark2 = darken(0.04, "#212338"),
   ultraDark = darken(0.1, "#212338"),
@@ -76,7 +76,7 @@ module.exports = {
         headerBg: dark,
         headerColor: light,
         /* footer */
-        footerBg: dark,
+        footerBg: colors.purple[900],
         footerColor: ultraLight,
         /* search */
         searchBg: "white",
