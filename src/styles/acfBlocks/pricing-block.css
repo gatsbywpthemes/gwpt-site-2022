@@ -5,8 +5,12 @@
   }
 }
 .tables-container {
+  @apply mt-16;
+  @apply max-w-md center-container;
+  @apply flex gap-10;
 }
 .pricing-table {
+  @apply w-1/2;
   .title {
   }
   .price {
