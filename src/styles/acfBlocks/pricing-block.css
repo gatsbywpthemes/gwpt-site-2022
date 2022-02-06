@@ -11,15 +11,27 @@
 }
 .pricing-table {
   @apply w-1/2;
+  @apply px-5 py-10 shadow-xl rounded-xl;
+  @apply text-center text-white bg-gradient-to-tr;
+  &.base-pack {
+    @apply from-purple-900 to-cyan-400;
+  }
+  &.pro-pack {
+    @apply from-purple-700 via-hotPink to-orange-500;
+  }
   .title {
+    @apply mb-2 text-2xl font-bold underline uppercase;
   }
   .price {
+    @apply font-bold uppercase;
+    span {
+      @apply text-sm font-light lowercase;
+    }
   }
   .features {
     .feature-container {
       .feature {
-      }
-      .description {
+        @apply py-2 text-xs font-semibold uppercase;
       }
     }
   }
