@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { HeadlineContent } from "@gatsbywpthemes/gatsby-theme-acf-builder/src/HeadlineContent"
+import { window } from "browser-monads"
 import { Tooltip } from "react-tippy"
 import "react-tippy/dist/tippy.css"
 
@@ -52,16 +53,25 @@ const PricingBlock = ({
           {tables.map((table, index) => {
             const { cssClass, price, productId, title, features, description } =
               table
+
+            const Paddle = window.Paddle
+            console.log("paddle", Paddle)
+            const openCheckout = () => {
+              Paddle.Checkout.open({
+                product: productId,
+                locale: "en",
+              })
+            }
             return (
               <div
                 className={`pricing-table ${cssClass ? cssClass : ""}`}
                 key={index}
               >
-                <div className="pb-5 mb-5 border-b border-dashed">
+                <div className="pb-8 mb-8 border-b border-dashed">
                   <Tooltip title={description} size="small" arrow distance={15}>
-                    <div className=" title">{title}</div>
+                    <div className="title">{title}</div>
                   </Tooltip>
-                  <div className=" price">
+                  <div className="price">
                     ${price}
                     <span>/year</span>
                   </div>
@@ -89,7 +99,16 @@ const PricingBlock = ({
                 </div>
                 {productId && (
                   <div className="button-container">
-                    <button>buy now</button>
+                    <button
+                      onClick={openCheckout}
+                      className={`${
+                        cssClass.includes("base")
+                          ? "from-cyan-500 to-purple-700"
+                          : "from-gold to-hotPink"
+                      }`}
+                    >
+                      buy now
+                    </button>
                   </div>
                 )}
               </div>

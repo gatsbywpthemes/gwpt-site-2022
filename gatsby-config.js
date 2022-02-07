@@ -33,6 +33,13 @@ module.exports = {
     `@gatsbywpthemes/gatsby-plugin-gwpt-tailwind`,
     `@gatsbywpthemes/gatsby-theme-acf-builder`,
     {
+      resolve: `gatsby-plugin-paddle`,
+      options: {
+        vendorId: "126819", // Find in your account settings.
+        debug: false, // Set true to start the debug mode.
+      },
+    },
+    {
       resolve: `@gatsbywpthemes/gatsby-plugin-gwpt-packages`,
       options: {
         ...DEFAULT_OPTIONS,

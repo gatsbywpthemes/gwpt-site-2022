@@ -6,7 +6,7 @@
 }
 .tables-container {
   @apply mt-16;
-  @apply max-w-md center-container;
+  @apply max-w-lg center-container;
   @apply flex gap-10;
 }
 .pricing-table {
@@ -14,16 +14,16 @@
   @apply px-5 py-10 shadow-xl rounded-xl;
   @apply text-center text-white bg-gradient-to-tr;
   &.base-pack {
-    @apply from-purple-900 to-cyan-400;
+    @apply from-purple-800 to-cyan-400;
   }
   &.pro-pack {
     @apply from-purple-700 via-hotPink to-orange-500;
   }
   .title {
-    @apply mb-2 text-2xl font-bold underline uppercase;
+    @apply mb-5 text-2xl font-bold underline uppercase;
   }
   .price {
-    @apply font-bold uppercase;
+    @apply text-3xl font-bold uppercase;
     span {
       @apply text-sm font-light lowercase;
     }
@@ -31,14 +31,14 @@
   .features {
     .feature-container {
       .feature {
-        @apply py-2 text-xs font-semibold uppercase;
+        @apply py-3 text-sm font-semibold tracking-wider uppercase;
       }
     }
   }
   .button-container {
-    @apply flex justify-center;
+    @apply flex justify-center mb-10 mt-7;
     button {
-      @apply btn btn-primary;
+      @apply w-[170px] py-4 btn text-base bg-gradient-to-b;
     }
   }
 }
