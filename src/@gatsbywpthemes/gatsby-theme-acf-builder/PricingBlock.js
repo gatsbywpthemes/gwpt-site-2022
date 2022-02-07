@@ -67,7 +67,7 @@ const PricingBlock = ({
                 className={`pricing-table ${cssClass ? cssClass : ""}`}
                 key={index}
               >
-                <div className="pb-8 mb-8 border-b border-dashed">
+                <div className="pb-10 mb-10 border-b border-dashed">
                   <Tooltip title={description} size="small" arrow distance={15}>
                     <div className="title">{title}</div>
                   </Tooltip>
@@ -89,9 +89,15 @@ const PricingBlock = ({
                             title={description}
                             size="small"
                             arrow
-                            distance={15}
+                            distance={5}
                           >
-                            <div className=" feature">{feature}</div>
+                            <div
+                              className={`feature ${
+                                description && "underline"
+                              }`}
+                            >
+                              {feature}
+                            </div>
                           </Tooltip>
                         </div>
                       )
