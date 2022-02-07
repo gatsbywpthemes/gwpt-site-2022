@@ -1,22 +1,40 @@
 .accordion-block {
+  @apply my-16;
   .accordion {
     @apply center-container;
+    @apply mt-20;
   }
 }
 
 .accordion-item {
-  @apply px-5 py-3 mb-4 border-2 border-teal-400 bg-teal-50 rounded-xl;
+  /* @apply px-5 py-3 mb-4 bg-purple-100 border-4 border-purple-400 rounded-xl; */
+
   .content-text {
     @apply w-full;
   }
 }
 .accordion-icon {
-  @apply w-7;
+  @apply w-5 text-primary;
 }
 .accordion-trigger {
   @apply flex justify-between w-full;
+  @apply p-5 mt-5 border-b border-purple-800 border-dashed rounded-t-lg;
+  @apply transition duration-300 hover:bg-orange-100;
+  h3 {
+    @apply text-gradient bg-gradient-to-r from-purple-700 to-orange-500;
+  }
 }
 
 .accordion-collapse {
   @apply duration-500;
+  /* @apply px-5 py-10 rounded-b-lg; */
+
+  .content-text {
+    @apply px-6 py-10 rounded-b-lg;
+    @apply bg-gradient-to-r from-purple-700 to-orange-500;
+    @apply leading-relaxed text-white;
+    p {
+      @apply max-w-lg;
+    }
+  }
 }
