@@ -122,11 +122,11 @@ section > .intro,
   ul {
     @apply py-4 ml-10;
     li {
-      @apply my-2 text-xl font-semibold text-gradient bg-gradient-to-r from-purple-800 to-cyan-500;
+      @apply my-2 text-xl font-semibold text-center text-gradient bg-gradient-to-r from-purple-800 to-cyan-500;
     }
   }
   .content-text > div {
-    @apply p-10 border-4 border-orange-600 shadow-md rounded-xl;
+    /* @apply p-10 border-4 border-orange-600 shadow-md rounded-xl; */
   }
   p,
   li {

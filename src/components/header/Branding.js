@@ -12,7 +12,7 @@ export const Branding = ({ title, ...props }) => {
       ) : (
         <h1 className="mb-0 text-4xl" {...props}>
           <Link className="text-bg hover:no-underline" to="/" rel="home">
-            {title}
+            GWPT
           </Link>
         </h1>
       )}
