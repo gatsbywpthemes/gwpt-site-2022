@@ -12,6 +12,7 @@ import FeaturesBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/Features
 import AccordionBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/AccordionBlock"
 import TestimonialsBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/TestimonialsBlock"
 import PricingBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/PricingBlock"
+import ProjectsBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/ProjectsBlock"
 
 const Page = ({ page, ctx }) => {
   const {
@@ -101,6 +102,8 @@ const Page = ({ page, ctx }) => {
                     return <TestimonialsBlock {...block} />
                   case "WpPage_Layoutblocks_Blocks_PricingBlock":
                     return <PricingBlock {...block} />
+                  case "WpPage_Layoutblocks_Blocks_ProjectsBlock":
+                    return <ProjectsBlock {...block} />
 
                   default:
                     return null

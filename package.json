@@ -14,12 +14,12 @@
     "analyze": "rm -rf .cache && ANALYZE_BUNDLE_SIZE=true gatsby build"
   },
   "dependencies": {
-    "@gatsbywpthemes/gatsby-plugin-gwpt-packages": "^2.0.7",
-    "@gatsbywpthemes/gatsby-plugin-gwpt-tailwind": "^1.2.4",
-    "@gatsbywpthemes/gatsby-theme-acf-builder": "^1.0.4",
-    "@gatsbywpthemes/gatsby-theme-wp-comments": "^1.0.4",
-    "@gatsbywpthemes/gatsby-theme-wp-search": "^1.0.3",
-    "@headlessui/react": "^1.4.1",
+    "@gatsbywpthemes/gatsby-plugin-gwpt-packages": "^2.0.8",
+    "@gatsbywpthemes/gatsby-plugin-gwpt-tailwind": "^1.2.5",
+    "@gatsbywpthemes/gatsby-theme-acf-builder": "^1.0.8",
+    "@gatsbywpthemes/gatsby-theme-wp-comments": "^1.0.5",
+    "@gatsbywpthemes/gatsby-theme-wp-search": "^1.0.4",
+    "@headlessui/react": "^1.5.0",
     "@kunukn/react-collapse": "^2.2.9",
     "browser-monads": "^1.0.0",
     "gatsby": "^4.6.2",
