@@ -10,6 +10,7 @@
 @import "acfBlocks/testimonials-block.css";
 @import "acfBlocks/features-block.css";
 @import "acfBlocks/pricing-block.css";
+@import "acfBlocks/projects-block.css";
 
 @layer base {
   /* Menu */

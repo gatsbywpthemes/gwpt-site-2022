@@ -1,7 +1,7 @@
 .features-block {
   &.advantages {
     .features-container {
-      @apply center-container mt-16 mx-auto md:px-0;
+      @apply mx-auto mt-16 center-container md:px-0;
       @apply grid grid-cols-1 md:grid-cols-2 gap-14;
     }
     .feature {
@@ -19,27 +19,20 @@
   &.plugins {
     @apply center-container;
     .features-container {
-      @apply flex xl:gap-16 gap-10 mt-10 lg:mt-16 flex-wrap lg:flex-nowrap;
+      @apply flex flex-wrap gap-10 mt-10 xl:gap-16 lg:mt-16 lg:flex-nowrap;
       .feature {
         @apply relative;
         @apply border-4 border-orange-600;
-        @apply bg-light;
-        @apply rounded-xl shadow-lg xl:px-10 px-8 py-12 lg:w-1/3;
-        /* &:after {
-          content: "";
-          @apply absolute -inset-1 bg-gradient-to-tr from-hotPink to-gold;
-          @apply rounded-xl shadow-lg -z-10;
-          width: calc(100%+14px);
-          height: 500px;
-        } */
+        @apply px-8 py-12 shadow-lg rounded-xl xl:px-10 lg:w-1/3;
+
         .headline {
-          @apply text-xl text-gradient bg-gradient-to-r from-purple-900 to-cyan-500 my-4;
+          @apply my-4 text-xl text-gradient bg-gradient-to-r from-purple-900 to-cyan-500;
         }
         .btn-container {
           @apply flex justify-start mt-10;
           .button {
             @apply relative;
-            @apply text-gradient bg-gradient-to-r from-hotPink to-gold font-bold text-upper-spaced;
+            @apply font-bold text-gradient bg-gradient-to-r from-hotPink to-gold text-upper-spaced;
             @apply transition duration-500 ease-in-out;
             @apply hover:translate-x-2;
           }

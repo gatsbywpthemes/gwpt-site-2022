@@ -1331,10 +1331,10 @@
     html-react-parser "^1.4.8"
     react-hook-form "^7.26.1"
 
-"@gatsbywpthemes/gatsby-theme-acf-builder@^1.0.8":
-  version "1.0.8"
-  resolved "https://npm.cloudsmith.io/gatsbywpthemes/gatsby-themes/@gatsbywpthemes/gatsby-theme-acf-builder/-/1.0.8/gatsby-theme-acf-builder-1.0.8.tgz#0e56d9e32bca4c05665cf1af4c66669076196c52"
-  integrity sha512-0qi+CCRk5TW365BlLyz70/ID6LXBSCZSHyL2sDFVCkp3EqWbpfM+DA20ffBvLHNgmqFDuQRzNl8tohKR2jNT7Q==
+"@gatsbywpthemes/gatsby-theme-acf-builder@^1.0.10":
+  version "1.0.10"
+  resolved "https://npm.cloudsmith.io/gatsbywpthemes/gatsby-themes/@gatsbywpthemes/gatsby-theme-acf-builder/-/1.0.10/gatsby-theme-acf-builder-1.0.10.tgz#b139ea6c509024407b203b7b02a8f36051bdbfa5"
+  integrity sha512-Lx14ZGAN3au0yiJtsngpOYaHP2OY7+e5yojK9HD9b5BTZW+CUwP/Esy19fgJNJgTVDc2mPnr047FG4o9gIAYqg==
   dependencies:
     react-slick "^0.28.1"
     react-tippy "^1.4.0"

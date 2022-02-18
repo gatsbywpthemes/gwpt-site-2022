@@ -1,0 +1,39 @@
+.projects-block {
+  @apply my-16;
+  .projects {
+    @apply center-container;
+    @apply grid grid-cols-1 gap-10 xl:grid-cols-3 lg:grid-cols-2;
+    .project {
+      @apply p-8 xl:p-10;
+      @apply border-4 border-orange-600 rounded-lg shadow-lg;
+      @apply transition duration-500 hover:-translate-y-1 hover:shadow-xl;
+      .project-image {
+      }
+
+      .headline {
+        @apply my-4 text-lg font-bold tracking-wider text-center uppercase;
+        @apply text-gradient bg-gradient-to-r from-purple-900 to-cyan-500;
+      }
+      .tags {
+        @apply flex flex-wrap justify-center;
+        @apply my-3;
+        .tag {
+          @apply mb-2 text-upper-spaced text-gradient bg-gradient-to-r from-hotPink to-gold;
+
+          .separator {
+            @apply mx-2 font-bold;
+          }
+        }
+      }
+      .project-description {
+        @apply mb-10 italic text-center;
+      }
+      .button-container {
+        @apply flex justify-center;
+        a {
+          @apply btn btn-primary btn-large;
+        }
+      }
+    }
+  }
+}
