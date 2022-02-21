@@ -11,7 +11,7 @@ export const FooterSubscribe = () => {
           <br /> and all the news
         </h2>
         <SubscribeForm
-          className="flex gap-5 pt-16 pb-10"
+          className="max-w-lg gap-5 px-5 pt-16 pb-10 mx-auto space-y-5 md:flex md:space-y-0"
           css={{
             input: tw`text-purple-200 bg-purple-800 border-2 border-purple-600 placeholder:text-purple-300`,
           }}
