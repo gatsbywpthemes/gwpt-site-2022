@@ -19,10 +19,10 @@
     @apply transition duration-300 text-headerColor dark:text-dark-headerColor text-upper-spaced;
   }
   .menu-item button {
-    @apply transition duration-500 hover:text-menuHoverColor dark:hover:text-dark-menuHoverColor text-upper-spaced;
+    @apply transition duration-500 hover:-translate-y-1 text-upper-spaced;
   }
   .menu-item > a {
-    @apply hover:text-menuHoverColor dark:hover:text-dark-menuHoverColor;
+    @apply hover:-translate-y-1;
   }
   .menuV > .menu-item {
     @apply py-3 border-b border-dashed border-opacity-40 last:border-none;
@@ -48,7 +48,7 @@
 
 @layer components {
   .center-container {
-    @apply container px-4 mx-auto lg:px-0;
+    @apply container px-5 mx-auto;
   }
   .card {
     @apply rounded-lg shadow-lg bg-cardBg dark:bg-dark-cardBg;

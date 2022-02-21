@@ -88,9 +88,9 @@ module.exports = {
         mobileMenuBg: "black",
         mobileMenuColor: light,
         subMenuBg: "black",
-        subMenucolor: colors.teal[900],
-        subMenuHoverColor: colors.teal[900],
-        menuHoverColor: colors.teal[300],
+        subMenucolor: primary,
+        subMenuHoverColor: primary,
+        menuHoverColor: colors.orange[600],
         /* newsletter */
         nlButtonBg: "black",
         nlButtonColor: "white",

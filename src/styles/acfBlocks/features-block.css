@@ -1,7 +1,7 @@
 .features-block {
   &.advantages {
     .features-container {
-      @apply mx-auto mt-16 center-container md:px-0;
+      @apply mt-16 center-container;
       @apply grid grid-cols-1 md:grid-cols-2 gap-14;
     }
     .feature {
@@ -17,8 +17,8 @@
     }
   }
   &.plugins {
-    @apply center-container;
     .features-container {
+      @apply center-container;
       @apply flex flex-wrap gap-10 mt-10 xl:gap-16 lg:mt-16 lg:flex-nowrap;
       .feature {
         @apply relative;

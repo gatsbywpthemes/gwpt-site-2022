@@ -1,22 +1,14 @@
 import React, { useState } from "react"
 import heroImage from "../../images/hero-image.svg"
-import { StaticImage } from "gatsby-plugin-image"
-
 import clsx from "clsx"
 import { SubscribeModal } from "../subscribe/SubscribeModal"
 
 export const HomeHero = () => {
   let [isOpen, setIsOpen] = useState(false)
-  function closeModal() {
-    setIsOpen(false)
-  }
 
-  function openModal() {
-    setIsOpen(true)
-  }
   return (
     <>
-      <div className="container items-center justify-between px-4 py-10 mx-auto lg:flex md:px-0">
+      <div className="items-center justify-between py-10 center-container lg:flex">
         <div className="space-y-7 left">
           <h1 className="text-4xl !leading-tight md:text-5xl lg:text-6xl">
             Gatsby themes{" "}

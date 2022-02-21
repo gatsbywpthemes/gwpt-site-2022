@@ -64,7 +64,7 @@ const TestimonialsBlock = ({
             quotesItems.map((quote, index) => {
               const { author, position, picture, content } = quote
               return (
-                <div className=" testimonial" key={index}>
+                <div className=" testimonial center-container" key={index}>
                   <div className="items-center gap-10 md:flex">
                     {picture && (
                       <div className="flex justify-center">
