@@ -20,8 +20,8 @@ const HeaderContent = (props) => {
         {/* {search && <SearchModal />} */}
       </div>
       <div className="flex items-center space-x-5">
-        <MainMenu orientation="H" className="hidden md:flex" />
-        <Slidemenu className="md:hidden" />
+        <MainMenu orientation="H" className="hidden lg:flex" />
+        <Slidemenu className="lg:hidden" />
       </div>
     </div>
   )

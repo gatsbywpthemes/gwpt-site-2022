@@ -10,7 +10,7 @@ export const HomeHero = () => {
     <>
       <div className="items-center justify-between py-10 center-container lg:flex">
         <div className="space-y-7 left">
-          <h1 className="text-4xl !leading-tight md:text-5xl lg:text-6xl">
+          <h1 className="text-4xl !leading-tight md:text-6xl lg:text-4xl xl:text-6xl">
             Gatsby themes{" "}
             <span className="text-gradient bg-gradient-to-r from-pink to-gold">
               designed to work <br className="hidden lg:block" /> with{" "}
@@ -33,7 +33,9 @@ export const HomeHero = () => {
               onClick={() => setIsOpen(true)}
             >
               Get your{" "}
-              <span className="text-2xl font-black text-orange-600">FREE</span>{" "}
+              <span className="text-xl font-black text-orange-600 sm:text-2xl">
+                FREE
+              </span>{" "}
               theme now!
             </button>
           </div>
