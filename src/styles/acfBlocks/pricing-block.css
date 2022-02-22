@@ -8,11 +8,11 @@
 .tables-container {
   @apply mt-16;
   @apply max-w-lg center-container;
-  @apply gap-10 md:flex;
+  @apply gap-10 lg:flex;
 }
 .pricing-table {
-  @apply md:w-1/2 max-w-[500px] mx-auto;
-  @apply px-5 pt-12 pb-10 mb-10 shadow-xl rounded-xl md:mb-0;
+  @apply lg:w-1/2 max-w-full sm:max-w-[85%] mx-auto;
+  @apply px-5 pt-12 pb-10 mb-10 shadow-xl rounded-xl lg:mb-0;
   @apply text-center text-white bg-gradient-to-tr;
   &.base-pack {
     @apply from-purple-800 to-cyan-400;

@@ -76,7 +76,7 @@ export const Slidemenu = ({ className, ...props }) => {
                         "overflow-y-scroll",
                         "shadow-xl",
                         "p-5",
-                        "bg-mobileMenuBg dark:bg-dark-mobileMenuBg ",
+                        "bg-gradient-to-tr from-purple-900 to-orange-600 ",
                         "text-mobileMenuColor dark:text-dark-mobileMenuColor"
                       )}
                     >

@@ -21,7 +21,7 @@
   @apply p-5 mt-5 border-b border-purple-800 border-dashed rounded-t-lg;
   @apply transition duration-300 hover:bg-orange-100;
   h3 {
-    @apply text-gradient bg-gradient-to-r from-purple-700 to-orange-500;
+    @apply text-left text-gradient bg-gradient-to-r from-purple-700 to-orange-500;
   }
 }
 

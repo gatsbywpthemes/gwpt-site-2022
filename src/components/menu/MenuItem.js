@@ -14,9 +14,7 @@ export const MenuItem = ({
     return (
       <div
         className={`menu-item flex items-center ${menuItem.cssClasses} ${
-          orientation === "V"
-            ? "text-mobileMenuColor dark:text-dark-mobileMenuColor"
-            : "text-text dark:text-dark-text"
+          orientation === "V" ? "text-mobileMenuColor" : "text-text"
         } ${className}`}
         key={menuItem.id}
         {...props}
@@ -24,9 +22,7 @@ export const MenuItem = ({
         <MenuLink
           menuItem={menuItem}
           className={` ${
-            orientation === "V"
-              ? "text-mobileMenuColor dark:text-dark-mobileMenuColor"
-              : "text-text dark:text-dark-text"
+            orientation === "V" ? "text-mobileMenuColor " : "text-text "
           }`}
         />
       </div>

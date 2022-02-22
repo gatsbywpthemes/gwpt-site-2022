@@ -25,7 +25,7 @@
     @apply hover:-translate-y-1;
   }
   .menuV > .menu-item {
-    @apply py-3 border-b border-dashed border-opacity-40 last:border-none;
+    @apply py-5 border-b border-dashed border-opacity-40 last:border-none;
   }
   .menuV .menu-item a {
     @apply text-dark-headerColor;
