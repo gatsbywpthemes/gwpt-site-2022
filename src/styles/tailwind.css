@@ -104,6 +104,7 @@ section > .intro,
 .simple-intro {
   @apply text-center;
   @apply max-w-md mx-auto space-y-6;
+  @apply center-container;
   .headline {
     @apply mb-6 text-sm uppercase text-primary;
   }
@@ -111,7 +112,7 @@ section > .intro,
     @apply text-xl font-semibold leading-relaxed;
 
     h2 {
-      @apply pb-6 text-6xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
+      @apply pb-6 text-5xl sm:text-6xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
     }
   }
 }
