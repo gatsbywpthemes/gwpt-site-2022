@@ -15,14 +15,17 @@
 @layer base {
   /* Menu */
   .menu-item,
-  .menu-item > a {
-    @apply transition duration-300 text-headerColor dark:text-dark-headerColor text-upper-spaced;
-  }
+  .menu-item > a,
   .menu-item button {
-    @apply transition duration-500 hover:-translate-y-1 text-upper-spaced;
+    @apply transition duration-500 text-headerColor text-upper-spaced;
   }
-  .menu-item > a {
-    @apply hover:-translate-y-1;
+  /* .menu-item button {
+    @apply transition duration-500 text-upper-spaced;
+  } */
+  .menuH .menu-item > a,
+  .menuH .menu-item button {
+    @apply px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-20;
+    /* @apply transition duration-500 text-headerColor text-upper-spaced; */
   }
   .menuV > .menu-item {
     @apply py-5 border-b border-dashed border-opacity-40 last:border-none;

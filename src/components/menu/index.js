@@ -15,7 +15,7 @@ export const MainMenu = ({
     menuItems && (
       <nav
         className={`main-menu flex   ${
-          orientation === "V" ? "flex-col  menuV" : "space-x-5 menuH"
+          orientation === "V" ? "flex-col  menuV" : " menuH"
         } ${className ? className : ""}`}
         aria-label="main"
         {...props}
