@@ -30,7 +30,7 @@ export const ArchiveContent = ({ posts, ctx, name, description }) => {
             }`
       }`}
     >
-      {name && <Archivetitle name={name} text="Posts for " className="mb-10" />}
+      {name && <Archivetitle name={name} className="mb-10" />}
       {description && (
         <Description description={description} className="mb-10" />
       )}
