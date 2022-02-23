@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-export const TaxonomyItem = ({ taxName, item, ...props }) => (
+export const TaxonomyItem = ({ taxName, item, className, ...props }) => (
   <Link
-    className="block mb-3"
+    className={`taxonomy-item ${className ? className : ""}`}
     to={`${item.uri}`}
     aria-label={`visit ${taxName} ${item.name} page`}
     {...props}

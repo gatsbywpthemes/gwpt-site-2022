@@ -156,6 +156,7 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("tailwindcss-debug-screens"),
     require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp"),
     require("tailwindcss-triangles")({
       componentPrefix: "c-", // defaults to 'c-'
       defaultSize: "1em", // defaults to '1em'

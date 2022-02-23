@@ -6,15 +6,15 @@ export const Archivetitle = ({ name, text, className, ...props }) => {
     <div
       className={clsx(
         "inline-block",
-        "px-7 py-2 rounded-full shadow-lg",
-        "bg-gradient-to-r from-secondary to-teal-300 dark:from-primary dark:to-hotPink",
+        "px-7 py-2 rounded-md shadow-lg",
+        "bg-gradient-to-tr from-pink to-gold",
 
         className
       )}
       {...props}
     >
       <h1
-        className={`text-archiveTitleColor dark:text-dark-archiveTitleColor uppercase text-lg`}
+        className={`text-white text-lg font-semibold uppercase tracking-wider`}
       >
         {text} {name}
       </h1>

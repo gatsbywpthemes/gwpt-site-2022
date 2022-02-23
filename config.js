@@ -3,7 +3,7 @@ const config = {
   layoutWidth: {
     page: "lg",
     post: "lg",
-    archive: "lg",
+    archive: "xl",
   },
   webfontsOptions: {
     fonts: {

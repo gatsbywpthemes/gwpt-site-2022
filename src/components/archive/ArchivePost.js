@@ -1,10 +1,10 @@
 import React from "react"
-import { PostEntryContent } from "../post/PostEntryContent"
+
 import { PostEntryMedia } from "../post/PostEntryMedia"
-import { PostEntryMeta } from "../post/PostEntryMeta"
 import { PostEntryTitle } from "../post/PostEntryTitle"
-import { PostEntryInfo } from "../post/PostEntryInfo"
+import { Taxonomies } from "../post/Taxonomies"
 import clsx from "clsx"
+import tw, { css } from "twin.macro"
 
 export const Archivepost = ({
   isFirst = false,
@@ -14,24 +14,52 @@ export const Archivepost = ({
   ...props
 }) => {
   return (
-    <article className={clsx("card", className)} {...props}>
-      <PostEntryMedia
-        post={post}
-        location="archive"
-        imageLoading={isFirst ? "eager" : "lazy"}
-        className="aspect-w-16 aspect-h-9"
-      />
+    <article
+      className={clsx(
+        "card transition  duration-500 hover:-translate-y-1 relative",
 
-      <div className="p-5 md:p-10">
+        className
+      )}
+      {...props}
+    >
+      <div className="relative">
+        <PostEntryMedia
+          post={post}
+          location="archive"
+          imageLoading={isFirst ? "eager" : "lazy"}
+          className=" aspect-w-16 aspect-h-7 rounded-t-md"
+        />
+        <Taxonomies
+          post={post}
+          taxName="categories"
+          singularName="category"
+          className="absolute right-3 top-3"
+          css={{
+            ".taxonomy-item": tw`px-3 py-2 text-[10px] font-semibold tracking-wider uppercase rounded-[3px] bg-gradient-to-tr from-pink to-gold  text-white transition duration-500`,
+          }}
+        />
+      </div>
+
+      <div className="p-5 md:p-8">
         <PostEntryTitle
           post={post}
           location="archive"
-          className="mb-5 uppercase"
+          className="mb-5 text-gradient bg-gradient-to-r from-pink to-orange-300"
         />
-        <PostEntryInfo post={post} className="mb-10" />
-        <PostEntryContent post={post} location="archive" />
-        <div className="my-12 divider" />
-        <PostEntryMeta post={post} />
+        <div
+          dangerouslySetInnerHTML={{ __html: post.excerpt }}
+          className="mb-10 line-clamp-2"
+        />
+
+        <Taxonomies
+          post={post}
+          taxName="tags"
+          singularName="tag"
+          className="absolute bottom-5 md:bottom-8 left-5 md:left-8"
+          css={{
+            ".taxonomy-item": tw`px-2 py-1 text-[10px] font-semibold tracking-wider uppercase rounded-[3px] bg-gradient-to-tr from-purple-900 to-cyan-500  text-white transition duration-500`,
+          }}
+        />
       </div>
     </article>
   )
