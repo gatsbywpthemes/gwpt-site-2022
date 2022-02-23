@@ -9,10 +9,7 @@ import clsx from "clsx"
 const SubmenuV = ({ menuItem }) => {
   return (
     <div className={`relative has-submenu menu-item`}>
-      <Collapse
-        trigger={menuItem.label}
-        className="text-mobileMenuColor dark:text-dark-mobileMenuColor"
-      >
+      <Collapse trigger={menuItem.label} className="text-mobileMenuColor ">
         <ul className="py-2 pl-3 menuItemGroup sub-menu">
           {menuItem.children.map((item) => (
             <MenuItem
@@ -48,12 +45,11 @@ const SubmenuH = ({ menuItem }) => {
         <Menu.Items
           className={clsx(
             `subMenu`,
-            `absolute mt-7 origin-top-right`,
+            `absolute mt-12 origin-top-right`,
             `rounded-lg`,
             `px-5 py-3 w-56`,
             `z-50`,
-
-            `bg-gradient-to-tr from-secondary to-teal-300 dark:from-primary dark:to-hotPink`
+            `bg-gradient-to-tr from-hotPink via-orange-600 to-gold`
           )}
         >
           <div className="relative">
@@ -62,7 +58,7 @@ const SubmenuH = ({ menuItem }) => {
                 {({ active }) => (
                   <MenuLink
                     menuItem={item}
-                    className={`  dark:hover:opacity-80 py-2 block !text-subMenuColor dark:text-dark-subMenuColor`}
+                    className={` py-1 block !text-light font-bold hover:!text-black`}
                   />
                 )}
               </Menu.Item>
