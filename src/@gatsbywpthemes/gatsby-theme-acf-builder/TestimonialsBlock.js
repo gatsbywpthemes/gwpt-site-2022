@@ -71,8 +71,8 @@ const TestimonialsBlock = ({
                         <GradientBorderPurple className="p-1 mb-10 rounded-full md:mb-0 ">
                           <Image
                             img={picture}
-                            className="rounded-full author-pic-container w-[130px] h-[130px] in"
-                            imgClassName="author-pic"
+                            className=" author-pic-container rounded-full w-[130px] h-[130px] in"
+                            imgClassName="author-pic rounded-full"
                           />
                         </GradientBorderPurple>
                       </div>
