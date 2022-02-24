@@ -47,7 +47,7 @@ const SubmenuH = ({ menuItem }) => {
             `subMenu`,
             `absolute mt-12 origin-top-right`,
             `rounded-lg`,
-            `px-5 py-3 w-56`,
+            `px-5 py-3 w-[150px]`,
             `z-50`,
             `bg-gradient-to-tr from-hotPink via-orange-600 to-gold`
           )}
