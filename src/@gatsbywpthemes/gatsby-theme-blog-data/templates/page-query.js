@@ -15,7 +15,7 @@ export const pageQuery = graphql`
         blocks {
           __typename
           ...contentBlock
-          ...sectionsBlock
+          ...sectionsBlock2
           ...coverBlock
           ...featuresBlock
           ...accordionBlock

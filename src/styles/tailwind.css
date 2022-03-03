@@ -54,7 +54,11 @@
     @apply container px-5 mx-auto;
   }
   .card {
-    @apply rounded-lg shadow-lg bg-cardBg dark:bg-dark-cardBg;
+    @apply rounded-lg shadow-lg bg-cardBg;
+  }
+  .border-card {
+    @apply border-4 border-orange-600;
+    @apply px-8 py-12 shadow-lg rounded-xl xl:px-10;
   }
   .divider {
     @apply bg-text dark:bg-dark-text mx-auto h-[1px] w-[90%] opacity-25;

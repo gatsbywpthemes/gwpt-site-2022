@@ -1,4 +1,41 @@
 .sections-block {
+  &.partners {
+    @apply center-container;
+    .intro .headline {
+      @apply pb-10 text-3xl text-center sm:text-6xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
+    }
+
+    .sections {
+      @apply grid gap-10 lg:grid-cols-2;
+    }
+    section {
+      @apply border-card;
+      .headline {
+        @apply text-center;
+        @apply text-gradient bg-gradient-to-r from-pink to-gold;
+        @apply rounded-full;
+      }
+      .gatsby-image-wrapper {
+        @apply !flex justify-center w-full;
+        @apply max-w-[200px] my-6;
+        img {
+          @apply mx-auto;
+          @apply rounded-full;
+          @apply border-4 border-purple-400 border-dashed;
+        }
+      }
+      p {
+        @apply mb-4;
+      }
+      .twitter {
+        @apply font-bold text-center text-orange-500;
+        @apply flex flex-col items-center;
+        a {
+          @apply block btn btn-primary btn-large max-w-[300px] mt-5 mx-auto text-white;
+        }
+      }
+    }
+  }
   &.two-cols {
     @apply grid-cols-2 gap-10 sm:grid;
     .headline {
@@ -15,13 +52,13 @@
     }
   }
   &.features-list {
-    @apply container px-4 mx-auto mt-10 lg:mt-16 lg:px-0 max-w-lg;
-    @apply grid grid-cols-1 lg:grid-cols-6 lg:gap-20 items-center;
+    @apply container max-w-lg px-4 mx-auto mt-10 lg:mt-16 lg:px-0;
+    @apply grid items-center grid-cols-1 lg:grid-cols-6 lg:gap-20;
     .features-text {
-      @apply col-span-2 relative;
+      @apply relative col-span-2;
       li {
         @apply text-center lg:text-left;
-        @apply mb-4 font-semibold text-xl text-gradient bg-gradient-to-r from-purple-800  to-cyan-500;
+        @apply mb-4 text-xl font-semibold text-gradient bg-gradient-to-r from-purple-800 to-cyan-500;
 
         &:before {
         }

@@ -22,8 +22,8 @@
       @apply flex flex-wrap gap-10 mt-10 xl:gap-16 lg:mt-16 lg:flex-nowrap;
       .feature {
         @apply relative;
-        @apply border-4 border-orange-600;
-        @apply px-8 py-12 shadow-lg rounded-xl xl:px-10 lg:w-1/3;
+
+        @apply border-card lg:w-1/3;
 
         .headline {
           @apply my-4 text-xl text-gradient bg-gradient-to-r from-purple-900 to-cyan-500;

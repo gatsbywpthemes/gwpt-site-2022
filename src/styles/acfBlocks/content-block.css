@@ -1,7 +1,30 @@
 .content-block {
+  &.about-intro {
+    @apply my-16;
+    @apply center-container;
+    @apply max-w-lg;
+    .content-text {
+      /* @apply text-center; */
+      @apply text-xl;
+      p {
+        @apply mb-6;
+      }
+      .gradient p {
+        @apply text-4xl font-bold text-center;
+        @apply text-gradient bg-gradient-to-r from-pink to-gold;
+      }
+      h2 {
+        @apply pb-10 text-3xl sm:text-6xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
+      }
+    }
+  }
+  ,
   .headline {
   }
   .content-text {
+    h2 {
+      /* @apply pb-6 text-5xl sm:text-6xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300; */
+    }
   }
   .button-container {
     @apply flex justify-center;
