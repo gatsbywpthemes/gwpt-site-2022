@@ -28,9 +28,13 @@ module.exports = {
           color: "#fff",
         },
       },
+
       fontFamily: {
         body: "Inter, sans-serif",
         heading: "Inter, sans-serif",
+      },
+      screens: {
+        xs: "360px",
       },
 
       maxWidth: {
