@@ -8,7 +8,7 @@ export const FooterSubscribe = () => {
       <div className="text-center center-container">
         <h2 className="text-4xl text-gradient bg-gradient-to-r from-light to-gold">
           Subscribe to get our free themes
-          <br /> and all the news
+          <br /> and product updates.
         </h2>
         <SubscribeForm
           className="max-w-lg gap-5 px-5 pt-16 pb-10 mx-auto space-y-5 md:flex md:space-y-0"

@@ -18,7 +18,8 @@ export const HomeHero = () => {
             WordPress
           </h1>
           <h3 className="text-3xl leading-normal">
-            Get your feet wet with <br /> our free theme!
+            {/* Get your feet wet with <br /> our free theme! */}
+            Modern Headless WordPress
           </h3>
           <div
             className={clsx(
@@ -32,11 +33,11 @@ export const HomeHero = () => {
               className="px-8 py-4 text-xl font-semibold rounded-full bg-light text-text"
               onClick={() => setIsOpen(true)}
             >
-              Get your{" "}
+              Get your feet wet with our{" "}
               <span className="text-xl font-black text-orange-600 sm:text-2xl">
                 FREE
               </span>{" "}
-              theme now!
+              theme
             </button>
           </div>
         </div>
