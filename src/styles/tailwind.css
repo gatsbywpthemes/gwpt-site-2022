@@ -95,7 +95,7 @@
   }
   /* Inputs */
   .input-focus {
-    @apply focus:outline-none focus:ring-gold focus:ring-4;
+    @apply focus:border-0 focus:outline-none focus:ring-gold focus:ring-4;
   }
   input[type="search"]:-webkit-autofill {
     box-shadow: theme("colors.searchBg") 0px 0px 0px 1000px inset;
@@ -104,6 +104,13 @@
   .dark input[type="search"]:-webkit-autofill {
     box-shadow: theme("colors.dark.searchBg") 0px 0px 0px 1000px inset;
     -webkit-text-fill-color: theme("colors.dark.text");
+  }
+  .remove-autocomplete-styles {
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      transition: background-color 5000s;
+    }
   }
 }
 

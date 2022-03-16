@@ -17,9 +17,6 @@ export const SubscribeForm = ({ modal, ...props }) => {
         : setMsg("This email has already subscribed, try with another one")
     })
   }
-  const handleChange = (e) => {
-    setEmail(e.target.value)
-  }
 
   const WithGradient = ({ children }) => {
     return modal ? (
@@ -30,34 +27,37 @@ export const SubscribeForm = ({ modal, ...props }) => {
       children
     )
   }
-  const styledInput =
-    " input-focus border-0 bg-orange-50 shadow-sm rounded-md text-text "
+  const styledInput = `input-focus bg-orange-50 shadow-sm rounded-md text-text mb-5 ${
+    modal ? "border-2 border-gold" : "border-0"
+  }`
   return (
     <>
       {msg ? (
         <div className="text-lg text-text">{msg}</div>
       ) : (
         <form onSubmit={handleSubmit} {...props}>
-          <WithGradient>
-            <input
-              type="text"
-              placeholder="First Name"
-              value={firstName}
-              required
-              onChange={(e) => setFirstName(e.target.value)}
-              className={styledInput}
-            />
-          </WithGradient>
-          <WithGradient>
-            <input
-              type="email"
-              placeholder="Email address"
-              onChange={handleChange}
-              value={email}
-              className={styledInput}
-              required
-            />
-          </WithGradient>
+          {/* <WithGradient> */}
+          <input
+            type="text"
+            aria-label="first name"
+            placeholder="First Name"
+            value={firstName}
+            required
+            onChange={(e) => setFirstName(e.target.value)}
+            className={styledInput}
+          />
+          {/* </WithGradient> */}
+          {/* <WithGradient> */}
+          <input
+            type="email"
+            aria-label="email"
+            placeholder="Email address"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            className={styledInput}
+            required
+          />
+          {/* </WithGradient> */}
           <div className="flex justify-end">
             <button className="btn btn-primary btn-large" type="submit">
               Subscribe
