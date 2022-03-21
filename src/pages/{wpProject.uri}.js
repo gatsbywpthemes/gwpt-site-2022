@@ -6,7 +6,6 @@ import { useSeoGeneral } from "~/lib/hooks/useSeoGeneral"
 
 const ProjectPage = ({ data }) => {
   const { wpProject: project } = data || {}
-  console.log("project", project)
   const {
     featuredImage,
     title,

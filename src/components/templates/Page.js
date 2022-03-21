@@ -88,7 +88,6 @@ const Page = ({ page, ctx }) => {
             {blocks?.length > 0 &&
               blocks.map((block, index) => {
                 let blockRef = { ...block, key: index }
-                console.log(blockRef)
                 switch (block.__typename) {
                   case "WpPage_Layoutblocks_Blocks_ContentBlock":
                     return <ContentBlock {...blockRef} />

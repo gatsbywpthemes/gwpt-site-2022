@@ -55,7 +55,6 @@ const PricingBlock = ({
               table
 
             const Paddle = window.Paddle
-            console.log("paddle", Paddle)
             const openCheckout = () => {
               Paddle.Checkout.open({
                 product: productId,
