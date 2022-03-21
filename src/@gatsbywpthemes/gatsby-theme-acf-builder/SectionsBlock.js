@@ -64,7 +64,7 @@ const SectionsBlock = ({
                   />
                 )}
                 {content && (
-                  <p
+                  <div
                     className="content-text"
                     dangerouslySetInnerHTML={{ __html: content }}
                   />

@@ -68,13 +68,7 @@ const PricingBlock = ({
                 key={index}
               >
                 <div className="pb-10 mb-10 border-b border-dashed">
-                  <Tooltip
-                    title={description}
-                    size="small"
-                    position="top"
-                    arrow
-                    distance={15}
-                  >
+                  <Tooltip title={description} size="small" arrow distance={15}>
                     <div className="title inline-block">{title}</div>
                   </Tooltip>
                   <div className="price">
