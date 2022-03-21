@@ -86,25 +86,25 @@ const Page = ({ page, ctx }) => {
               <ParsedContent content={content} />
             </div>
             {blocks?.length > 0 &&
-              blocks.map((block) => {
+              blocks.map((block, index) => {
+                let blockRef = { ...block, key: index }
                 switch (block.__typename) {
                   case "WpPage_Layoutblocks_Blocks_ContentBlock":
-                    return <ContentBlock {...block} />
+                    return <ContentBlock {...blockRef} />
                   case "WpPage_Layoutblocks_Blocks_SectionsBlock":
-                    return <SectionsBlock {...block} />
+                    return <SectionsBlock {...blockRef} />
                   case "WpPage_Layoutblocks_Blocks_CoverBlock":
-                    return <CoverBlock {...block} />
+                    return <CoverBlock {...blockRef} />
                   case "WpPage_Layoutblocks_Blocks_FeaturesBlock":
-                    return <FeaturesBlock {...block} />
+                    return <FeaturesBlock {...blockRef} />
                   case "WpPage_Layoutblocks_Blocks_AccordionBlock":
-                    return <AccordionBlock {...block} />
+                    return <AccordionBlock {...blockRef} />
                   case "WpPage_Layoutblocks_Blocks_TestimonialsBlock":
-                    return <TestimonialsBlock {...block} />
+                    return <TestimonialsBlock {...blockRef} />
                   case "WpPage_Layoutblocks_Blocks_PricingBlock":
-                    return <PricingBlock {...block} />
+                    return <PricingBlock {...blockRef} />
                   case "WpPage_Layoutblocks_Blocks_ProjectsBlock":
-                    return <ProjectsBlock {...block} />
-
+                    return <ProjectsBlock {...blockRef} />
                   default:
                     return null
                 }

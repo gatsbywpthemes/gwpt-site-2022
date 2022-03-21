@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp"
-import clsx from "clsx"
-import { GradientBorderPurple } from "../ui-components"
+// import { GradientBorderPurple } from "../ui-components"
 
 export const SubscribeForm = ({ modal, ...props }) => {
   const [firstName, setFirstName] = useState("")
@@ -18,15 +17,15 @@ export const SubscribeForm = ({ modal, ...props }) => {
     })
   }
 
-  const WithGradient = ({ children }) => {
-    return modal ? (
-      <GradientBorderPurple className="p-[3px] mb-5 rounded-md">
-        {children}
-      </GradientBorderPurple>
-    ) : (
-      children
-    )
-  }
+  // const WithGradient = ({ children }) => {
+  //   return modal ? (
+  //     <GradientBorderPurple className="p-[3px] mb-5 rounded-md">
+  //       {children}
+  //     </GradientBorderPurple>
+  //   ) : (
+  //     children
+  //   )
+  // }
   const styledInput = `input-focus bg-orange-50 shadow-sm rounded-md text-text mb-5 ${
     modal ? "border-2 border-gold" : "border-0"
   }`

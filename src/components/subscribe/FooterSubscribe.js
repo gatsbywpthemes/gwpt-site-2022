@@ -1,6 +1,6 @@
 import React from "react"
 import { SubscribeForm } from "./SubscribeForm"
-import tw, { css } from "twin.macro"
+import tw from "twin.macro"
 
 export const FooterSubscribe = () => {
   return (

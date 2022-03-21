@@ -33,7 +33,6 @@ export const Newsletter = (props) => {
               <div className="w-2/3">
                 <input
                   placeholder="Email address"
-                  aria-label="email"
                   name="email"
                   required
                   value={email}

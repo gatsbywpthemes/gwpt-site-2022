@@ -1,6 +1,5 @@
 import React from "react"
 import { TaxonomyItem } from "./TaxonomyItem"
-import clsx from "clsx"
 
 export const Taxonomies = ({ post, taxName, singularName, ...props }) => {
   const taxonomies = post[taxName].nodes

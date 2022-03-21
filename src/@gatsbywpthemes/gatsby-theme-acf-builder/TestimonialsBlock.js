@@ -34,7 +34,7 @@ const TestimonialsBlock = ({
   quotesItems,
   ...props
 }) => {
-  const slides = quotesItems.length > 3 ? 3 : quotesItems.length
+  // const slides = quotesItems.length > 3 ? 3 : quotesItems.length
   const sliderSettings = {
     slidesToShow: 1,
     slidesToScroll: 1,

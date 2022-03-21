@@ -4,7 +4,7 @@ import { PostEntryMedia } from "../post/PostEntryMedia"
 import { PostEntryTitle } from "../post/PostEntryTitle"
 import { Taxonomies } from "../post/Taxonomies"
 import clsx from "clsx"
-import tw, { css } from "twin.macro"
+import tw from "twin.macro"
 
 export const Archivepost = ({
   isFirst = false,
