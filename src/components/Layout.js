@@ -5,7 +5,9 @@ import clsx from "clsx"
 import Helmet from "react-helmet"
 import { HelmetForFavicon } from "./HelmetForFavicon"
 
-export const Layout = ({ children, page, type = "page", ...props }) => {
+export const Layout = (props) => {
+  const { children, page, type = "page" } = props
+
   const layoutClass = page !== undefined ? (page.slug ? page.slug : page) : ""
   const pageTemplate = page?.headlesswp?.pageTemplate
 
@@ -26,7 +28,7 @@ export const Layout = ({ children, page, type = "page", ...props }) => {
           class: devMode ? "debug-screens" : "",
         }}
       />
-      <Header />
+      <Header isHomePage={page?.slug === "home" ?? false} />
       <main
         className={`${
           pageTemplate !== "full width" ? "py-16 center-container" : "pb-10"

@@ -4,11 +4,9 @@ import { Branding } from "./Branding"
 import { Slidemenu } from "./SlideMenu"
 import Headroom from "react-headroom"
 import clsx from "clsx"
-import { window } from "browser-monads"
 import bgGradient from "../../images/hero-gradient.svg"
 import bgLightWave from "../../images/light-wave.svg"
 import { HomeHero } from "./HomeHero"
-import { Wave } from "../SVG"
 // import { HeroGradient, Wave } from "../SVG"
 // import { SearchModal } from "../search/SearchModal"
 // import { useThemeOptions } from "@gatsbywpthemes/gatsby-theme-blog-data/src/hooks"
@@ -28,13 +26,12 @@ const HeaderContent = (props) => {
   )
 }
 
-export const Header = ({ ...props }) => {
+export const Header = ({ isHomePage, ...props }) => {
   // const { addWordPressSearch: search, addColorModes } = useThemeOptions()
-  const path = window.location.pathname
-  const isHome = path === "/"
+
   return (
     <>
-      {isHome ? (
+      {isHomePage ? (
         <header
           className="relative h-[720px] md:h-[830px] bg-left-top object-cover bg-no-repeat bg-cover text-light overflow-hidden"
           css={{ backgroundImage: `url(${bgGradient})` }}

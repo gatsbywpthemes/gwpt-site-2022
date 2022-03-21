@@ -16,12 +16,17 @@
         @apply rounded-full;
       }
       .gatsby-image-wrapper {
-        @apply !flex justify-center w-full;
+        @apply !flex justify-center w-full overflow-hidden;
         @apply max-w-[200px] my-6;
         img {
           @apply mx-auto;
-          @apply rounded-full;
+          @apply rounded-full overflow-hidden;
           @apply border-4 border-purple-400 border-dashed;
+        }
+      }
+      .gatsby-image-wrapper {
+        div {
+          @apply rounded-full overflow-hidden;
         }
       }
       p {
