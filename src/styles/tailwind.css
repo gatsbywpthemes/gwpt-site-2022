@@ -117,7 +117,7 @@
 section > .intro,
 .simple-intro {
   @apply text-center;
-  @apply max-w-md mx-auto space-y-6;
+  @apply !max-w-md mx-auto space-y-6;
   @apply center-container;
   .headline {
     @apply mb-6 text-sm uppercase text-primary;
@@ -130,14 +130,14 @@ section > .intro,
     }
   }
   &.pricing-bottom {
-    @apply max-w-lg mt-20 mb-10;
+    @apply !max-w-lg mt-20 mb-10;
     @apply p-5 bg-orange-100 shadow-lg rounded-xl md:p-20;
   }
 }
 
 .pricing-block {
   .intro {
-    @apply max-w-lg;
+    @apply !max-w-lg;
   }
   ul {
     @apply py-4 ml-10;
