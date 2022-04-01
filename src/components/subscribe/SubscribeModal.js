@@ -24,6 +24,11 @@ export const SubscribeModal = ({ isOpen, setIsOpen }) => {
         </Dialog.Title>
 
         <SubscribeForm className="subscribe-form" modal />
+        <p className="max-w-md mx-auto mt-8 text-sm italic text-gray-500">
+          Yes, I would like to receive email newsletters, product information,
+          and offers from Gatsby WP Themes. We will not sell your data to third
+          parties.
+        </p>
       </div>
     </Modal>
   )
