@@ -58,9 +58,11 @@ export const SubscribeForm = ({ modal, ...props }) => {
           />
           {/* </WithGradient> */}
           <div className="flex justify-end">
-            <button className="btn btn-primary btn-large" type="submit">
-              Subscribe
-            </button>
+            <div>
+              <button className="h-12 btn btn-primary btn-large" type="submit">
+                Subscribe
+              </button>
+            </div>
           </div>
         </form>
       )}
