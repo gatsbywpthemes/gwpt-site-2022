@@ -129,6 +129,10 @@ section > .intro,
       @apply pb-6 text-5xl sm:text-6xl text-gradient bg-gradient-to-tr from-violet-900 to-violet-300;
     }
   }
+  &.pricing-bottom {
+    @apply max-w-lg mt-20 mb-10;
+    @apply p-5 bg-orange-100 shadow-lg rounded-xl md:p-20;
+  }
 }
 
 .pricing-block {
