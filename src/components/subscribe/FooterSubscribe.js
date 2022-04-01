@@ -17,9 +17,9 @@ export const FooterSubscribe = () => {
           }}
         />
         <p className="max-w-md mx-auto text-sm italic text-purple-300">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam.
+          Yes, I would like to receive email newsletters, product information,
+          and offers from Gatsby WP Themes. We will not sell your data to third
+          parties.
         </p>
       </div>
     </div>
