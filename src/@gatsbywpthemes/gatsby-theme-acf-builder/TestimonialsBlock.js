@@ -82,7 +82,7 @@ const TestimonialsBlock = ({
                         className="text-2xl font-medium testimonial-content text-light"
                         dangerouslySetInnerHTML={{ __html: content }}
                       />
-                      <div className="mt-5 italic font-medium author text-gradient bg-gradient-to-r from-gold to-hotPink">
+                      <div className="mt-5 italic font-medium text-gold author">
                         <div className="author-name">{author}</div>
                         <div className="author-position">{position}</div>
                       </div>

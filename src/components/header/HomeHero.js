@@ -11,11 +11,11 @@ export const HomeHero = () => {
       <div className="items-center justify-between py-10 center-container lg:flex">
         <div className="space-y-7 left">
           <h1 className="text-4xl !leading-tight md:text-6xl lg:text-4xl xl:text-6xl">
-            Gatsby themes{" "}
+            Gatsby themes <br className="hidden lg:block" />{" "}
             <span className="text-gradient bg-gradient-to-r from-pink to-gold">
-              designed to work <br className="hidden lg:block" /> with{" "}
+              designed to work <br className="hidden lg:block" />
             </span>
-            WordPress
+            with WordPress
           </h1>
           <h3 className="text-3xl leading-normal">
             Get your feet wet with <br /> our free theme!
