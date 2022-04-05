@@ -45,7 +45,7 @@ export const Newsletter = (props) => {
                 <button
                   aria-label="submit"
                   type="submit"
-                  className="h-10 rounded-l-none rounded-r-md btn btn-primary bg-nlButtonBg "
+                  className="h-10 rounded-l-none shadow-none rounded-r-md btn btn-primary bg-nlButtonBg hover:translate-y-0 hover:shadow-none"
                 >
                   Subscribe
                 </button>
