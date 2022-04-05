@@ -4,6 +4,9 @@
   }
   .content-text {
   }
+  ul {
+    @apply !ml-0;
+  }
 }
 .tables-container {
   @apply mt-16;
