@@ -17,7 +17,7 @@ export const HomeHero = () => {
             </span>
             with WordPress
           </h1>
-          <h3 className="text-3xl leading-normal">
+          <h3 className="text-2xl leading-normal  sm:text-3xl">
             Get your feet wet with <br /> our free theme!
           </h3>
           <div
@@ -29,7 +29,7 @@ export const HomeHero = () => {
             )}
           >
             <button
-              className="px-8 py-4 text-xl font-semibold rounded-full bg-light text-text"
+              className="px-4 py-4 font-semibold leading-tight rounded-full sm:px-8 text-l sm:text-xl bg-light text-text"
               onClick={() => setIsOpen(true)}
             >
               Get your{" "}
