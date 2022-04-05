@@ -51,7 +51,7 @@
 
 @layer components {
   .center-container {
-    @apply container px-8 mx-auto;
+    @apply container px-5 mx-auto sm:px-8;
   }
   .card {
     @apply rounded-lg shadow-lg bg-cardBg;
