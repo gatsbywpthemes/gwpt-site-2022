@@ -23,6 +23,7 @@
     "@kunukn/react-collapse": "^2.2.9",
     "@tailwindcss/line-clamp": "^0.3.1",
     "browser-monads": "^1.0.0",
+    "detect-browser": "^5.3.0",
     "gatsby": "^4.11.2",
     "gatsby-plugin-paddle": "^2.1.0",
     "local-storage": "^2.0.0",
