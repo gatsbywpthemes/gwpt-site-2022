@@ -14,7 +14,7 @@
     "analyze": "rm -rf .cache && ANALYZE_BUNDLE_SIZE=true gatsby build"
   },
   "dependencies": {
-    "@gatsbywpthemes/gatsby-plugin-gwpt-packages": "^2.0.8",
+    "@gatsbywpthemes/gatsby-plugin-gwpt-packages": "^2.0.12",
     "@gatsbywpthemes/gatsby-plugin-gwpt-tailwind": "^1.2.5",
     "@gatsbywpthemes/gatsby-theme-acf-builder": "^1.0.10",
     "@gatsbywpthemes/gatsby-theme-wp-comments": "^1.0.5",
@@ -23,17 +23,17 @@
     "@kunukn/react-collapse": "^2.2.9",
     "@tailwindcss/line-clamp": "^0.3.1",
     "browser-monads": "^1.0.0",
-    "gatsby": "^4.6.2",
+    "gatsby": "^4.11.2",
     "gatsby-plugin-paddle": "^2.1.0",
     "local-storage": "^2.0.0",
     "lodash.merge": "^4.6.2",
-    "prismjs": "^1.26.0",
+    "prismjs": "^1.27.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
-    "babel-preset-gatsby": "^2.6.0",
-    "prettier": "^2.5.1"
+    "babel-preset-gatsby": "^2.11.1",
+    "prettier": "^2.6.2"
   }
 }
