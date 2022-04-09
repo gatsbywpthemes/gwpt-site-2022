@@ -25,11 +25,23 @@
   h6 {
     @apply text-xs font-heading leading-heading;
   }
+  article {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply mb-4;
+      @apply text-gradient bg-gradient-to-tr from-hotPink to-gold;
+    }
+  }
+
   table {
     @apply mb-6;
   }
   blockquote {
-    @apply px-5 py-12 border-l-4 sm:px-12 border-accentColor max-w-[800px] mx-auto my-10 bg-teal-50 italic dark:bg-slate-800;
+    @apply px-5 pb-5 pt-8 border-l-4 sm:px-12 border-orange-600 max-w-[800px] mx-auto my-10 bg-orange-50 italic dark:bg-slate-800 rounded-sm;
   }
   input {
     @apply w-full h-12 rounded-md focus:outline-none focus:border-gray-500;
