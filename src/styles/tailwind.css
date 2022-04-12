@@ -116,11 +116,11 @@
 
 section > .intro,
 .simple-intro {
-  @apply text-center;
   @apply !max-w-lg mx-auto space-y-6;
   @apply center-container;
   .headline {
     @apply mb-6 text-sm uppercase text-primary;
+    @apply text-center;
   }
   .content-text {
     @apply text-xl font-semibold leading-relaxed;
@@ -142,7 +142,7 @@ section > .intro,
   ul {
     @apply py-4 ml-10;
     li {
-      @apply my-2 text-xl font-semibold text-center text-gradient bg-gradient-to-r from-purple-800 to-cyan-500;
+      @apply my-2 text-xl font-semibold text-gradient bg-gradient-to-r from-purple-800 to-cyan-500;
     }
   }
   .content-text > div {

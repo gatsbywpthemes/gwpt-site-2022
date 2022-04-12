@@ -32,7 +32,11 @@ export const SubscribeForm = ({ modal, ...props }) => {
   return (
     <>
       {msg ? (
-        <div className="text-lg text-text">{msg}</div>
+        <div
+          className={`text-lg ${!modal ? "text-purple-200 my-5" : "text-text"}`}
+        >
+          {msg}
+        </div>
       ) : (
         <form onSubmit={handleSubmit} {...props}>
           {/* <WithGradient> */}
