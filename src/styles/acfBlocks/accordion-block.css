@@ -11,6 +11,9 @@
 
   .content-text {
     @apply w-full;
+    a {
+      @apply text-orange-200 underline hover:text-white;
+    }
   }
 }
 .accordion-icon {
