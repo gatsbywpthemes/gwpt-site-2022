@@ -91,3 +91,6 @@
 .content p {
   @apply mb-5 text-text dark:text-dark-text;
 }
+.wp-video {
+  @apply !max-w-full;
+}
