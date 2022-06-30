@@ -53,7 +53,7 @@ const Page = ({ page, ctx }) => {
           }
         }
       /> */}
-      <SeoSimple title={title} shareImage={featuredImage.src} />
+      <SeoSimple title={title} shareImage={featuredImage?.src} />
       <article>
         <div
           className={`mainContainer mx-auto ${
