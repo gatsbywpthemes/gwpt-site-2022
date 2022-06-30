@@ -3,6 +3,7 @@ import { Layout } from "../Layout"
 import { Sidebar } from "../Sidebar"
 import { PostEntry } from "../post"
 import { Seo } from "@gatsbywpthemes/gatsby-plugin-wp-seo"
+import SeoSimple from "../Seo"
 import { useThemeOptions } from "@gatsbywpthemes/gatsby-theme-blog-data/src/hooks"
 import clsx from "clsx"
 import { Comments } from "@gatsbywpthemes/gatsby-theme-wp-comments/src"
@@ -23,7 +24,7 @@ const Post = ({ post, ctx }) => {
 
   return (
     <Layout page={post} type="post">
-      <Seo
+      {/* <Seo
         title={title}
         uri={uri}
         yoastSeo={ctx.yoastSeo}
@@ -35,7 +36,8 @@ const Post = ({ post, ctx }) => {
             height: featuredImage.height,
           }
         }
-      />
+      /> */}
+      <SeoSimple title={title} shareImage={featuredImage?.src} />
       <div
         className={`mainContainer mx-auto ${
           hasSidebar
