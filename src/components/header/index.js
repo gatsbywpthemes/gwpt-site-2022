@@ -39,7 +39,8 @@ export const Header = ({ isHomePage, ...props }) => {
           className="relative h-[720px] md:h-[830px] bg-left-top object-cover bg-no-repeat bg-cover text-light overflow-hidden"
           css={{
             backgroundImage: `url(${
-              browser.name === "safari" ? bgGradientJpg : bgGradient
+              // browser.name === "safari" ? bgGradientJpg : bgGradient
+              bgGradientJpg
             })`,
           }}
         >

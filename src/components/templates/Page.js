@@ -3,6 +3,7 @@ import { Layout } from "../Layout"
 import { Sidebar } from "../Sidebar"
 import { ParsedContent, ActivatePageScripts } from "../../utils"
 import { Seo } from "@gatsbywpthemes/gatsby-plugin-wp-seo"
+import SeoSimple from "../Seo"
 import { useThemeOptions } from "@gatsbywpthemes/gatsby-theme-blog-data/src/hooks"
 import clsx from "clsx"
 import ContentBlock from "@gatsbywpthemes/gatsby-theme-acf-builder/src/ContentBlock"
@@ -38,7 +39,7 @@ const Page = ({ page, ctx }) => {
 
   return (
     <Layout page={page} type="page">
-      <Seo
+      {/* <Seo
         isFrontPage={isFrontPage}
         title={title}
         uri={uri}
@@ -51,7 +52,8 @@ const Page = ({ page, ctx }) => {
             height: featuredImage.height,
           }
         }
-      />
+      /> */}
+      <SeoSimple title={title} shareImage={featuredImage.src} />
       <article>
         <div
           className={`mainContainer mx-auto ${
