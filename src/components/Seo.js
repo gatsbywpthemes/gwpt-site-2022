@@ -15,6 +15,7 @@ const SEO = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={shareImage} />
       <meta name="twitter:image" content={shareImage} />
+      <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
   )
 }
