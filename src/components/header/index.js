@@ -9,9 +9,6 @@ import bgGradient from "../../images/hero-gradient.svg"
 import bgLightWave from "../../images/light-wave.svg"
 import { HomeHero } from "./HomeHero"
 import { detect } from "detect-browser"
-// import { HeroGradient, Wave } from "../SVG"
-// import { SearchModal } from "../search/SearchModal"
-// import { useThemeOptions } from "@gatsbywpthemes/gatsby-theme-blog-data/src/hooks"
 
 const HeaderContent = (props) => {
   return (
@@ -39,8 +36,7 @@ export const Header = ({ isHomePage, ...props }) => {
           className="relative h-[720px] md:h-[830px] bg-left-top object-cover bg-no-repeat bg-cover text-light overflow-hidden"
           css={{
             backgroundImage: `url(${
-              // browser.name === "safari" ? bgGradientJpg : bgGradient
-              bgGradientJpg
+              browser.name === "safari" ? bgGradientJpg : bgGradient
             })`,
           }}
         >
